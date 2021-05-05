@@ -10,12 +10,23 @@
 <body>
 <!--=== Animation section ===-->
   <section>
-    <nav>
-      <h4>Fruska gora</h4>
-      <a href="" class="btn">Prijavite se</a>
-    </nav>
+    <header class="wrapper">
+      <div class="logo">
+        <img src="img/logo/mountain_light.svg" alt="logo">
+        <h4>Fruška gora</h4>
+      </div>
+      <nav>
+        <a href="">Mapa</a>
+        <a href="">Zapisi</a>
+        <a href="#!" class="btn">Prijavite se</a>
+      </nav>
+    </header>
+    
     <div class="container">
-      <h1 class="main-title">Istražite nas.</h1>
+      <div class="title-container">
+        <h1 class="main-title">U duhu predaka, jedno sa prirodom.</h1>
+        <a href="#!" class="btn btn-primary">Registrujte se</a>
+      </div>
       <img src="./img/landing/main.png" class="main" alt="main-background">
       <img src="./img/landing/treeline.png" class="treeline" alt="treeline-background">
       <img src="./img/landing/grass.png" class="grass" alt="grass-background">
@@ -23,54 +34,88 @@
     </div>
 <!--=== Content ===-->
     <div class="content">
-      <div class="content-images">
+      <img src="img/logo/mountain_light.svg" class="img-bg" alt="logo">
+
+      <div class="content-finding wrapper">
+
+        <div class="container-number active">
+          <span class="number">01</span>
+          <span class="md-text">Izletišta</span>
+        </div>
+
+        <div class="container-number">
+          <span class="number">02</span>
+          <span class="md-text">Manastiri</span>
+        </div>
+
+        <div class="container-number">
+          <span class="number">03</span>
+          <span class="md-text">Restorani</span>
+        </div>
+
+        <div class="container-number">
+          <span class="number">04</span>
+          <span class="md-text">Prenoćišta</span>
+        </div>
+      </div>
+      <div class="content-images wrapper">
 
         <div class="img-card">
           <img src="./img/Fruska_gora_-_pogled_na_Backu.jpg" alt="pogled">
           <div class="text">
-            <span class="md-text">Prolece</span>
-            <p class="sm-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, nihil!</p>
+            <span class="sm-text">Prolece</span>
+            <p class="md-text">Rohalj Baze</p>
           </div>
         </div>
 
         <div class="img-card">
           <img src="./img/fruška-gora-hill-trees.jpg" alt="pogled">
           <div class="text">
-            <span class="md-text" >Leto</span>
-            <p class="sm-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, nihil!</p>
+            <span class="sm-text">Leto</span>
+            <p class="md-text">Letenka</p>
           </div>
         </div>
 
         <div class="img-card">
           <img src="./img/ah0xq2gzm6t41.jpg" alt="pogled">
           <div class="text">
-            <span class="md-text">Jesen</span>
-            <p class="sm-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, nihil!</p>
+            <span class="sm-text">Jesen</span>
+            <p class="md-text">Koruška</p>
           </div>
         </div>
 
         <div class="img-card">
           <img src="./img/fruška-gora-trees-hill-frost.jpg" alt="pogled">
-          <div class="text">
-            <span class="md-text">Zima</span>
-            <p class="sm-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, nihil!</p>
+          <div class="text active">
+            <span class="sm-text">Zima</span>
+            <p class="md-text">Zmajevac</p>
           </div>
         </div>
         
-        <h2>Uživajte u našoj prirodi.</h2>
-        <p class="md-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad perferendis labore 
-          repellendus atque mollitia veritatis recusandae assumenda ducimus, neque, quis cupiditate libero 
-          odit, voluptates iste expedita corporis quod laborum nisi!</p>
       </div>
-      <div class="img-container">
-        <img src="./img/Радост_на_Венцу.jpg" alt="uzivanje">
+      <div class="content-details wrapper">
+          <div class="details-container">
+            <div class="between">
+              <h4>Zima</h4>
+              <h2>Zmajevac</h2>
+              <p class="lg-text">
+                Zimsko doba predivno je iskusiti na Vencu, kojeg je Zmajevac deo, 
+                niz restorana sa najlepšim đakonijama, najlepši hoteli, za svačiji
+                džep, šetališta i šume, smeh, veselje i netaknuta priroda, sve na 
+                jednom mestu.
+              </p>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="./img/Радост_на_Венцу.jpg" alt="uzivanje">
+            <p class="md-text">Zimske čarolije na Vencu.</p>
+          </div>
       </div>
-      <p class="md-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+      
     </div>
-
   </section>
-  
-<!--=== Scripts ===--> -->
+
+<!--=== Scripts ===-->
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
