@@ -3,7 +3,7 @@
 Site about a mountain and a national park in my vicinity.
 I made it as a tribute, and as a way to learn GSAP ScrollMagic plugin.
 
-* I coded it to look similar to this design [link]: https://dribbble.com/shots/4542804-Greaterphoto-landing
+* I coded it to look similar to this design [link](https://dribbble.com/shots/4542804-Greaterphoto-landing)
 
 * Found adequate image for animation and processed it in Adobe Photoshop
 
@@ -22,8 +22,7 @@ I made it as a tribute, and as a way to learn GSAP ScrollMagic plugin.
 * create an infinitely scrolling page (ajax load of additional content).
 * dd callbacks at specific scroll positions or while scrolling past a specific section, passing a progress parameter.
 
-[Scroll Magic]: https://scrollmagic.io/docs/index.html
+[Scroll Magic](https://scrollmagic.io/docs/index.html)
 
-## All in all, this was a very fun and educational project, it made me realize how huge and helpful GSAP is,
+## All in all, this was a very fun and educational project, it made me realize how huge and helpful GSAP is, and it's potential in web development.
 
-## and it's potential in web development.
