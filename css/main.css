@@ -73,6 +73,9 @@ nav a {
   margin-left: .75rem;
 }
 
+header .menu {
+  display: none;
+}
 
 /* *** Hero *** */
 .container {
@@ -195,7 +198,7 @@ nav a {
 }
 
 .details-container .between {
-  width: max-content;
+  max-width: max-content;
   margin: 0 auto;
 }
 
@@ -235,4 +238,74 @@ nav a {
 .img-container:hover p {
   color: #333;
   background-color: aliceblue;
+  opacity: .95;
+}
+
+/* *** Media Queries *** */
+/* Laptops */
+@media (max-width: 900px) {
+  header {
+    width: calc(100% - 4rem);
+  }
+
+  nav {
+    display: none;
+  }
+
+  header .menu {
+    display: block;
+  }
+
+  header .menu img {
+    width: 35px;
+    transition: transform .5s;
+  }
+
+  header .menu:hover img {
+    transform: rotateZ(90deg);
+  }
+
+  header .menu:active img {
+    animation: swing 1s alternate;
+  }
+
+  @keyframes swing {
+    0% {
+      transform: rotateZ(0)
+    }
+    100% {
+      transform: rotateZ(450deg)
+    }
+  }
+
+  .title-container .main-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    overflow: hidden;
+  }
+
+  .content-finding,
+  .content-images,
+  .content-details {
+    margin: 2rem;
+  }
+
+  .content-finding {
+    max-width: calc(100% - 4rem);
+    flex-direction: column;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 500px) {
+  .content-finding,
+  .content-images,
+  .content-details,
+  header {
+    margin: 2rem auto;
+    width: calc(100% - 2rem);
+  }
 }
